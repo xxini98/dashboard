@@ -5,12 +5,17 @@ const GlobalStyles = createGlobalStyle`
 ${reset}
 
     :root {
-        --primary: #120E46;
+        --primary: #4318FF;
+        --primary-dark: #2b3674;
         --S_Light: #CBC8EC;
         --primary-light: rgba(90, 84, 164, 0.80);
         --primary-1: #8A87B3;
         --primary-2: #8D86D5;
         --primary-3: #908EAE;
+        --secondary-grey-600: #A3AED0
+        --secondary-grey-300:#f4f7fe
+        --secondary-grey-700:#707EAE
+
         // --S_Light: red;
         --secondary: #FCA311;
         --secondary-light: #FFBA32;
@@ -42,13 +47,17 @@ ${reset}
         --font-small: 0.8rem
         --max-width: 1200px;
         --header-height: 60px;
+        --line-default : #f4f7fe;
     }
-    // body {
-    //     background: url(images/1.png) no-repeat 100% 0 !important;
-    //     #root {
-    //         opacity: 0.5 !important;
-    //     }
-    // }
+     body {
+         background: url(Tables.jpg) no-repeat 100% 0 !important;
+         #root {
+             opacity: 0.9 !important;
+         }
+     } 
+
+/* public에 넣은 이미지와 src에 넣은 이미지는 경로찾기가 다르다 public은 html처럼! 단 ./public/2.jpg가 아니라 2.jpg 넣거나 public 안에 images 폴더 안이면 images/2.jpg 이런 식으로! 완전 상대경로로 쓰는 것이 아니다. */
+
     *{
         box-sizing: border-box;
         margin: 0;
@@ -57,7 +66,7 @@ ${reset}
     /* 기본 폰트 설정 */
     body, html {
         line-height: 1.5;
-        font-family: 'Spoqa Han Sans Neo', "Malgun Gothic", "맑은 고딕", sans-serif;
+        font-family: "Poppins", "Malgun Gothic", "맑은 고딕", sans-serif;
         font-weight: 400;
         color: #333;
       }
@@ -75,4 +84,5 @@ ${reset}
         text-indent: -9999px;
     }
 `;
+
 export default GlobalStyles;

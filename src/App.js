@@ -1,24 +1,33 @@
 import React from "react";
 import Layout from "./components/layout/Layoyt";
-import { Reset } from "styled-reset";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
-import About from "./pages/About";
-import GlobalStyles from "./styles/GlobalStyles.styles";
-import "./App.css";
+import "./App.scss";
+import { CSSReset, ChakraProvider } from "@chakra-ui/react";
+import GlobalStyles from "./assets/styles/GlobalStyles.styles";
+import theme from "./theme/index";
+import MarketPlace from "./pages/MarketPlace";
+import Tables from "./pages/Tables";
+import Kanban from "./pages/Kanban";
+import Profile from "./pages/Profile";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
-    <>
-      <Reset />
+    <ChakraProvider theme={theme}>
+      <CSSReset />
       <GlobalStyles />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/market" element={<MarketPlace />} />
+          <Route path="/tables" element={<Tables />} />
+          <Route path="/kanban" element={<Kanban />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
       </Layout>
-    </>
+    </ChakraProvider>
   );
 }
 
