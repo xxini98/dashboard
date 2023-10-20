@@ -21,8 +21,8 @@ const Gnb = () => {
             <FaHouse /> DASHBOARD
           </Link>
         </li>
-        <li className={location.pathname === "/market" ? "active" : ""}>
-          <Link to="/market">
+        <li className={location.pathname === "/marketplace" ? "active" : ""}>
+          <Link to="/marketplace">
             <FaCartShopping />
             NFT Marketplace
           </Link>

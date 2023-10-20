@@ -50,7 +50,7 @@ ${reset}
         --line-default : #f4f7fe;
     }
      body {
-         background: url(Tables.jpg) no-repeat 100% 0 !important;
+         /* background: url(Tables.jpg) no-repeat 100% 0 !important; */
          #root {
              opacity: 0.9 !important;
          }

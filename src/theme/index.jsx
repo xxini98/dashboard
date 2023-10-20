@@ -2,12 +2,16 @@
 
 import { extendTheme } from "@chakra-ui/react";
 import { textTheme } from "./components/Text";
+import { tableTheme } from "./components/table";
+import { progressTheme } from "./components/progress";
 // import { containerTheme } from "./components/container";
 
 const theme = extendTheme({
   components: {
     // Container: containerTheme,
     Text: textTheme,
+    Table: tableTheme,
+    Progress: progressTheme,
   },
   styles: {
     global: {
@@ -39,6 +43,7 @@ const theme = extendTheme({
   },
   colors: {
     secondary_7: "#707eae",
+    secondary_grey_600: "##A3AED0",
   },
 });
 export default theme;

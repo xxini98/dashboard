@@ -1,13 +1,8 @@
 import React from "react";
-import History from "../components/title/History";
+import Layout from "../components/layout/Layout";
 
 const SignIn = () => {
-  return (
-    <div>
-      <History pagename={"SignIn"} />
-      <h2>SignIn</h2>
-    </div>
-  );
+  return <Layout pagename={"SignIn"}></Layout>;
 };
 
 export default SignIn;

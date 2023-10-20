@@ -1,13 +1,8 @@
 import React from "react";
-import History from "../components/title/History";
+import Layout from "../components/layout/Layout";
 
 const MarketPlace = () => {
-  return (
-    <div>
-      <History pagename="MarketPlace" />
-      <h2>MarketPlace</h2>
-    </div>
-  );
+  return <Layout title={'NFT MarketPlace'} pagename={"MarketPlace"}></Layout>;
 };
 
 export default MarketPlace;

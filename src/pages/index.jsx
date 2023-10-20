@@ -1,13 +1,11 @@
 import React from "react";
-import Title from "../components/title/Title";
-import History from "../components/title/History";
+import Layout from "../components/layout/Layout";
 
 const Home = () => {
   return (
-    <div>
-      <History pagename={"Dashboard"} />
-      <Title title="홈" desc="이 페이지는 홈입니다." />
-    </div>
+    <Layout title="DashBoard" pagename={"DashBoard"}>
+      안녕?
+    </Layout>
   );
 };
 

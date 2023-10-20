@@ -1,13 +1,10 @@
 import React from "react";
-import History from "../components/title/History";
+import Layout from "../components/layout/Layout";
 
 const Profile = () => {
-  return (
-    <div>
-      <History pagename={"Profile"} />
-      <h2>Profile</h2>
-    </div>
-  );
+  return <Layout pagename={"Profile"}>
+
+  </Layout>;
 };
 
 export default Profile;
